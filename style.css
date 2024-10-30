@@ -1,0 +1,217 @@
+:root {
+  --soft-black: #424242;
+  --soft-white: #c7c7c7;
+  --white: #ffffff;
+  --orange: #ee7624;
+  --pink: #d8363c;
+  --purple: #b44593;
+  --pink-bold: #d65467;
+  --sky-blue: #3b71ca;
+}
+
+body {
+  background: var(--soft-black);
+  color: var(--white);
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+}
+
+/* main container */
+.generalContainer {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainContainer {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.titleContainer > .principalLogo {
+  width: 300px;
+}
+
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.titleContainer > h1 {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.loginContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+.loginItemContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 50px 0;
+  width: 100%;
+}
+
+.inputContainer {
+  position: relative;
+}
+
+.inputItem {
+  box-sizing: border-box;
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  border: 1px solid #ffffff;
+  background: var(--soft-black);
+  color: var(--white);
+  font-size: 16px;
+  padding: 10px;
+}
+
+.inputItem::placeholder {
+  color: var(--soft-black);
+}
+
+.labelItem {
+  color: var(--soft-white);
+  position: absolute;
+  left: 8px;
+  padding: 0 15px;
+  top: 15px;
+  pointer-events: none;
+}
+
+.inputItem:focus::placeholder {
+  color: var(--soft-white);
+}
+
+.inputItem:focus + .labelItem,
+.inputItem:valid + .labelItem {
+  top: -10px;
+  background: var(--soft-black);
+  transition: 0.3s ease;
+
+  color: var(--sky-blue);
+  font-size: 15px;
+}
+
+.inputContainer > input:focus {
+  text-decoration: none;
+  outline: none;
+  caret-color: var(--sky-blue);
+
+  border: 2px solid var(--sky-blue);
+}
+
+.inputContainer > input:placeholder {
+  color: var(--soft-white);
+}
+
+/* login item container */
+
+.loginItemContainer > p {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.loginItemContainer > button {
+  height: 50px;
+  padding: 6px;
+  background: linear-gradient(
+    to right,
+    var(--orange) 0%,
+    var(--pink) 30%,
+    var(--purple) 100%
+  );
+  border: 0;
+  border-radius: 5px;
+  color: var(--white);
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.loginItemContainer > button:hover {
+  transition: 0.4s;
+  box-shadow: 0px 0px 40px 2px #242422;
+}
+
+.loginItemContainer > a {
+  margin: 0 auto;
+  color: var(--soft-white);
+  text-decoration: none;
+}
+
+.loginContainer > p {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+a.linkButton {
+  border: 2px solid var(--pink-bold);
+  border-radius: 5px;
+  background-color: var(--soft-black);
+  color: var(--pink-bold);
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+a.linkButton:hover {
+  transition: 0.3s;
+  background-color: #42171e;
+}
+
+.forgotContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+/* About Container */
+
+.aboutContainer {
+  box-sizing: border-box;
+  width: 50%;
+  height: 100vh;
+  background: linear-gradient(
+    to right,
+    var(--orange) 0%,
+    var(--pink) 25%,
+    var(--purple) 100%
+  );
+
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+
+  flex-direction: column;
+  gap: 20px;
+  padding: 0 190px;
+}
+
+.aboutContainer > h2 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.aboutContainer > p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+}
