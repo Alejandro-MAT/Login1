@@ -1,0 +1,36 @@
+@media (max-width: 768px) {
+  .generalContainer {
+    flex-direction: column;
+  }
+  .mainContainer {
+    width: 100%;
+    margin: 2rem 0;
+  }
+
+  .loginContainer {
+    width: 70%;
+  }
+
+  .inputItem {
+    height: 2.5rem;
+  }
+
+  .labelItem {
+    top: 0.7rem;
+  }
+
+  .loginItemContainer > button {
+    height: 2.5rem;
+  }
+
+  .aboutContainer {
+    width: 100%;
+    height: 16rem;
+    padding: 12rem 7rem;
+  }
+
+  .aboutContainer > h2 {
+    font-size: 2rem;
+
+  }
+}

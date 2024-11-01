@@ -1,0 +1,39 @@
+@media (max-width: 1440px) {
+    .aboutContainer {
+        padding: 0 8rem;
+        height: 100vh;
+    }
+
+    .aboutContainer > h2 {
+        font-size: 2rem;
+        padding: 0;
+    }
+
+    .loginItemContainer {
+        gap: 1.5rem;
+        margin: 2rem 0;
+    }
+
+    .inputItem {
+        height: 2.4rem;
+    }
+
+    .labelItem {
+        font-size: 1rem;
+        top: .8rem;
+    }
+
+    .loginItemContainer > button {
+        height: 2.4rem;
+    }
+}
+
+@media (max-width: 1024px) {
+  .loginContainer {
+    width: 75%;
+  }
+
+  .aboutContainer {
+    padding: 0 5rem;
+}
+}
